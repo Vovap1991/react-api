@@ -10,7 +10,7 @@ export class SearchForm extends Component {
 
   handleChangeInput = event => {
     this.setState({
-      query: event.target.value,
+      query: event.target.value.toLowerCase().trim(),
     });
   };
 
